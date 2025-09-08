@@ -38,7 +38,6 @@ public class Book {
         isValidString(title);
         isValidInt(year);
 
-
         this.title = title;
         this.author = author;
         this.year = year;
@@ -50,12 +49,10 @@ public class Book {
         this.title = title;
     }
 
-
     public void setBookAuthor(String author){
         isValidString(author);
         this.author = author;
     }
-
 
     public void setBookYear(int year){
         isValidInt(year);
@@ -64,6 +61,7 @@ public class Book {
 
 
     public static int getCountBook() { return countBook; }
+
     public String getAuthor() { return author; }
     public String getTitle() { return title; }
     public int getYear() { return  year; }
